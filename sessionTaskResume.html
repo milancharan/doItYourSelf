@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 120px;
+            border-radius: 50%;
+            margin-left: 70%;
+            margin-top: -16px;
+        }
+        .row{
+            padding: 1%;
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .col1,.col2{
+            border: 2px solid rgba(0, 0, 0, 0.384);
+            border-radius: 20px;
+        }
+        .col1{
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 250px;
+            background-color: rgba(91, 93, 94, 0.87);
+        }
+        .tic1{
+            width: 50%;
+            margin-top: 20%;
+        }
+        .tic2{
+            width: 50%;
+            padding: 4%;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+        .col2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: fit-content;
+        }
+        .tic3{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 20%;
+            border: 2px solid rgba(0, 0, 0, 0.384);
+            background-color: rgba(98, 96, 93, 0.335);
+            border-radius: 17px;
+        }
+        .tic4{
+            width: 80%;
+            margin: 2%;
+        }
+        .tic3 a{
+            margin: 2% 1%;
+            padding: 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            border: 2px solid rgba(0, 0, 0, 0.384);
+            background-color: rgba(230, 171, 171, 0.432);
+            border-radius: 7px;
+        }
+        .tic3 a:hover{
+            background-color: rgba(230, 171, 171, 1.0);
+            color: black;
+            font-weight: bold;
+        }
+        #personalDetails,#educationalDetails,#programmingLanguages,#personalProjects,#certificates,#languages{
+            display: none;
+            font-size: larger;
+        }
+        #personalDetails:target{
+            display: block;
+        }
+        #educationalDetails:target{
+            display: block;
+        }
+        #internships:target{
+            display: block;
+        }
+        #programmingLanguages:target{
+            display: block;
+        }
+        #personalProjects:target{
+            display: block;
+        }
+        #certificates:target{
+            display: block;
+        }
+        #languages:target{
+            display: block;
+        }
+        @media screen and (min-width:320px) and (max-width:768px) {
+            img{
+                width: 60px;
+                border-radius: 50%;
+                margin-left: 80%;
+                margin-top: 10px;
+            }
+            .col1{
+                display: grid;
+                grid-template-columns: auto;
+                background-color: rgba(91, 93, 94, 0.87);
+            }
+            .tic1{
+                width: 50%;
+                margin: 0 0;
+            } 
+            .tic2{
+                width: 100%;
+                padding: 0;
+                font-size: 18px;
+                margin-left: 0;
+                margin-top: 0;
+                text-align: center;
+            } 
+            .col2{
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+            .tic3{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                width: 100%;
+                border: 2px solid rgba(0, 0, 0, 0.384);
+                background-color: rgba(98, 96, 93, 0.335);
+            }
+            .tic4{
+                width: 100%;
+                margin: 2%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <div class="tic1">
+                    <img src="./logo.png" alt="Milan Charan">
+                </div>
+                <div class="tic2">
+                   <h1>Milan Charan</h1>
+                    <label for="Discription"><strong>Career Objective : </strong>To learn and develop technologies wth new ideas that are going to be the building block of my Career.</label>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="tic3">
+                    <a href="#personalDetails">Personal Details</a>
+                    <a href="#educationalDetails">Educational Details</a>
+                    <a href="#programmingLanguages">Programming Languages Known</a>
+                    <a href="#personalProjects">Personal Projects</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#languages">Languages</a>
+                </div>
+                <div class="tic4">
+                    <div id="personalDetails">
+                        <h2>Contact</h2>
+                        <h3>Phone</h3>
+                        <label for="">7225060025</label>
+                        <h3>Email</h3>
+                        <label for="">milancharan4@gmail.com</label>
+                        <h3>Address</h3>
+                        <label for="">203, Purushottam Dham Bunglow, near avalon hotel, Ahmedabad</label>
+                    </div>
+                    <div id="educationalDetails">
+                        <h2>Education</h2>
+                        <dl>
+                            <dt><h3>SSC</h3>
+                                <dd>
+                                    <label for="">Pt. D. P. S. Hr. Sec. School, Dehri, MP</label><br>
+                                    <label for="">2016 - 2017</label><br>
+                                    <label for="">Percentage - 84.16%</label><br>
+                                </dd>
+                            </dt>
+                            <dt><h3>HSC</h3>
+                                <dd>
+                                    <label for="">Pt. D. P. S. Hr. Sec. School, Dehri, MP</label><br>
+                                    <label for="">2018 - 2019</label><br>
+                                    <label for="">Percentage - 74.20%</label><br>
+                                </dd>
+                            </dt>
+                            <dt><h3>B.TECH</h3>
+                                <dd>
+                                    <label for="">Shivajirao Kadam Institute of Tech. & Mgmt., Indore</label><br>
+                                    <label for="">2019 - present</label><br>
+                                    <label for="">Computer Science & Engineering</label><br>
+                                    <label for="">CGPA - 7.8 </label><br>
+                                </dd>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div id="programmingLanguages">
+                            <h2>Programming Skills</h2>
+                            <dl>
+                                <dt>HTML/CSS
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>JavaScript
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>React.js
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>C/C++
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>Python
+                                    <dd>Basic</dd>
+                                </dt><br>
+                                <dt>DBMS
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>OOPs
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>DSA
+                                    <dd>Beginner</dd>
+                                </dt><br>
+                            </dl>
+                    </div>
+                    <div id="personalProjects">
+                        <h2>Personal Projects</h2>
+                        <ul>
+                            <li>Expense Tracker</li><br>
+                            <li>E-commerce Website</li><br>
+                            <li>Portfolio Website</li><br>
+                            <li>Spotify Clone (WebApp)</li><br>
+                            <li>Pokemon Web App</li><br><br><br><br>
+                        </ul>
+                    </div>
+                    <div id="certificates">
+                        <h2>Certificates</h2>
+                        <ul>
+                            <li><strong>C Training : </strong><i>IIt Bombay (09/2020)</i></li><br>
+                            <li> <strong>JavaScript Tutorial Course : </strong><i>Coursera (06/2020)</i></li><br>
+                            <li><strong>Certificate of Participation - Uber HackTag 2.0 : </strong><i>unstop (04/2022)</i></li><br>
+                            <li><strong>Certificate of Participation - Flipkart Grid 3.0 ~ Software Development Challange : </strong><i>unstop (10/2021)</i></li><br>
+                        </ul>
+                    </div>
+                    <div id="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Hindi</li>
+                            <li>English</li>
+                            <li>Gujarati</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

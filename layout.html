@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Layout</title>
+    <style>
+        #div1 div { 
+            font-size: 25px;
+        }
+        .wrap{
+            width: 980px;
+            margin: 0 auto;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 140px;
+            margin-bottom: 15px;
+            background-color: #0d7963;
+        }
+        .content {
+            width: 690px;
+            height: 450px;
+            background-color: #0d7963;
+            float: right;
+            justify-content: center;
+        }
+        /* .leftbar {
+            width: 275px;
+            height: 450px;
+            background-color: #0d7963;
+            float: left;
+        } */
+        .sidebar {
+            width: 275px;
+            height: 450px;
+            background-color: #0d7963;
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+        .footer {
+            height: 70px;
+            margin-top: 15px;
+            background-color: #0d7963;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="wrap">
+        <div class="header">Header</div>
+        <div class="content">Content</div>
+        <!-- <div class="leftbar">Leftbar</div> -->
+        <div class="sidebar">Sidebar</div>
+        <div class="clear"></div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Details</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 99%;
+            display:flex;
+            flex-direction: none;
+            margin:20px;
+        }
+        .nav{
+            width: 10%;
+            height: 10%;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .icon{
+            display: none;
+        }
+       a{
+        color: white;
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 2px white;
+        text-decoration: none;
+        font-size: 20px;
+       }
+       a:hover{
+        background-color: rgb(105, 16, 16);
+        color: white;
+        border-radius: 10px;
+       }
+       .details{
+        width: 88%;
+        border: 2px solid black;
+        margin-left:20px ;
+       }
+       .mdetails{
+        display: grid;
+        grid-template-columns: auto auto auto;
+       }
+       .details h1{
+        text-align: center; 
+        margin-top: 0; 
+        background-color:black; 
+        color:white;
+       }
+       .tic{
+        margin: 20px;
+       }
+       .nav2{
+        display: none;
+       }
+       summary{
+        list-style: none;
+       }
+       @media screen and (max-width:1440px) {
+        .mdetails{
+            display: grid;
+            grid-template-columns: auto auto auto; 
+        }
+        .details{
+            width: 75%;
+        }
+        a{
+            font-size: 30px;
+            margin-left: -10px;
+        }
+        a:hover{
+            margin-left: 0;
+        }
+        .container{
+            width: 100%;
+        }
+        .nav{
+            width: 15%;
+        }
+       }
+       @media screen and (max-width:1024px) {
+        .mdetails{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .details{
+            width: 75%;
+        }
+        a{
+            font-size: 25px;
+            margin-left: -10px;
+        }
+        a:hover{
+            margin-left: 0;
+        }
+        .container{
+            width: 100%;
+        }
+        .nav{
+            width: 20%;
+        }
+       }
+       @media screen and (max-width:768px) {
+        .mdetails{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .details{
+            width: 75%;
+        }
+        a{
+            font-size: 20px;
+            margin-left: -10px;
+        }
+        a:hover{
+            margin-left: 0;
+            background-color: rgb(105, 16, 16);
+        }
+        .container{
+            width: 100%;
+        }
+        .nav{
+            width: 20%;
+        }
+       }
+       @media screen and (max-width:425px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: black;
+        }
+        .responsive{
+            display: block;
+            position: relative;
+            width: 99%;
+            margin-top: -25px;
+            border-radius: 0;
+        }
+        .responsive a:hover{
+            background-color: rgb(105, 16, 16);
+            padding: 15px;
+        }
+        .container{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .mdetails{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .details{
+            width: 89%;
+        }
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+        <div class="nav" id="nav">
+            <a href="#">
+                <details>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                    <summary>Public</summary>
+                </details>
+            </a>
+            <a href="#"><details>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+                <summary>View</summary>
+            </details></a>
+            <a href="#"><details>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+                <summary>HR</summary>
+            </details></a>
+             <a href="#"><details>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+                <summary>Network Details</summary>
+            </details></a>
+             <a href="#"><details>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+                <summary>Contact Us</summary>
+            </details></a>
+        </div>
+        
+        <div class="details" style="border-radius: 20px; height: fit-content;">
+            <h1 style="border-top-left-radius: 18px; border-top-right-radius: 18px;">Details</h1>
+            <div class="mdetails">
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+                <div class="tic">
+                    <label for=""><strong>Name:</strong> abc</label><br>
+                    <label for=""><strong>Value:</strong> abc</label><br>
+                    <label for=""> <strong>Extra:</strong> abc</label><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("nav");
+            if(x.className == "nav"){
+                x.className += " responsive"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>
