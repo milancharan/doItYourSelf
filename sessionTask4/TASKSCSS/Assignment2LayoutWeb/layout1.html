@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Demo Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header {
+            display: flex;
+            padding: 15px;
+            text-align: center;
+            background: white;
+            justify-content: center;
+        }
+
+        .header h1 {
+            flex: 50%;
+            font-size: 50px;
+            
+        }
+
+        .header .logo img {
+            width: 45px;
+            height: 45px;
+            margin-top: 40px;
+        }
+
+        .nav {
+            overflow: hidden;
+            background: #333;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav a:hover {
+            color: black;
+            background-color: #ddd;
+        }
+
+        .search {
+            float: right;
+            padding: 10px 10px;
+            margin-top: 3px;
+        }
+
+        /* .nav form {
+            width: 30%;
+            float: right;
+            margin: auto;
+            padding: 15px 15px;
+        } */
+
+        /* .nav form button {
+            color: red;
+            margin-left: -5px;
+            font-size: 15px;
+        } */
+
+        /* .nav form input{
+            margin-top: 8px;
+        } */
+
+        .leftcol {
+            float: left;
+            width: 30%;
+            padding-left: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .img {
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .info1 {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .rightcol {
+            float: right;
+            width: 67%;
+        }
+
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #bbb2b2;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcol, .rightcol {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .nav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo" id="logo"><img src="/Assignment2LayoutWeb/download.png" alt=""></div>
+        <div class="name" id="name"><h1>Mogal</h1></div>
+        
+    </div>
+    <div class="nav">
+        <a href="/Assignment2LayoutWeb/layout1.html" target="_blank" class="active" style="color: black; background-color: #ddd;">Home</a>
+        <a href="/Assignment2LayoutWeb/aboutus.html">About us</a>
+        <a href="/Assignment2LayoutWeb/contactus.html">Contact us</a>
+        <div class="search"><input id="search" type="text" placeholder="Search.." name="search"> 
+            <button class="btn" style="margin-left: -5px; font-size: 14.5px;" type="submit"><i class="fa fa-search"></i></button></div>
+        </div>
+    <div class="row">
+        <div class="leftcol">
+            <div class="info1">
+                <h2>My info</h2>
+                <h3>Description</h3>
+                <div class="img" style="height: 200px;">Image</div>
+                <p>Writing info...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, unde!</p>
+            </div>
+            <div class="info1">
+                <h2>My info</h2>
+                <h3>Description</h3>
+                <div class="img" style="height: 200px;">Image</div>
+                <p>Writing info...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, unde!</p>
+            </div>
+        </div>
+        <div class="rightcol">
+            <div class="info1">
+                <h2>About me</h2>
+                <div class="img" style="height: 100px;">Image</div>
+                <p>This is about me.</p>
+            </div>
+            <div class="info1">
+                <h3>Trending</h3>
+                <div class="img">image</div>
+                <div class="img">image</div>
+                <div class="img">image</div>
+            </div>
+            <div class="info1">
+                <h3>Follow Me</h3>
+                <p>Typing...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

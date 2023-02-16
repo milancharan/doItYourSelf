@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../sessionTask4.css">
+    <style>
+        .htmlimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70vw;
+            height: 70vh;
+            margin: 40px 400px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 20%;
+            position: fixed;
+            top: 120px;
+            left: 8px;
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;  
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks{
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+        
+        
+
+        .htmlimg > *{
+            box-sizing: border-box;
+        }
+
+        .htmlimg > body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .htmlimg > .container {
+            width: 100%;
+            margin: 20px;
+            /* display: grid;
+            grid-template-columns: 450px auto; */
+            display: flex;
+            flex-direction: none;
+        }
+
+        .htmlimg > .nav {
+            margin-left: 30px;
+            background-color: black;
+            width: 12%;
+            height: 10%;
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .htmlimg > .icon {
+            display: none;
+        }
+
+        .htmlimg > a{
+            display: flex;
+            justify-content: start;
+            color: white;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-top: 5px;
+            padding-bottom: 20px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            box-shadow: 2px white 0.6;
+            font-size: 20px;
+        }
+
+        .htmlimg > a:hover {
+            background-color: rgb(232, 228, 228);
+            color: black;
+            border-radius: 10px;
+        }
+
+        .htmlimg > .details {
+            width: 76vw;
+            border: 2px solid black;
+            margin-left: 110px;
+            margin-top: 2px;
+            border-radius: 15px;
+        }
+
+        .htmlimg > .details h1 {
+            margin-top: auto;
+            text-align: center;
+            font-size: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 13px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .htmlimg > .info {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .htmlimg > .card {
+            text-align: start;
+            margin: 25px;
+            font-size: 18px;
+        }
+
+        .htmlimg > summary {
+            list-style-type: none;
+        }
+
+        .htmlimg > details ul li {
+            list-style-type: none;
+        }
+
+        /* @media screen and (max-width:1440px) {
+            .info {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details {
+                width: 73vw;
+            }
+            a{
+                font-size: 20px;
+            }
+            .container {
+                width: 100%;
+            }
+            .nav {
+                width: 15%;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            .info {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details {
+                width: 63vw;
+            }
+            a{
+                font-size: 20px;
+            }
+            .container {
+            margin-top: 20px;
+            border-radius: 15px;
+            }
+            .details h1 {
+                margin-top: auto;
+                width: 100%;
+            }
+            .nav {
+                width: 20%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .info {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details {
+                width: 66vw;
+                margin-left: 45px;
+            }
+            a{
+                font-size: 20px;
+            }
+            .container {
+                width: 100%;
+            }
+            .nav {
+                width: 22%;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .nav{
+                display: none;
+            }
+            .responsive{
+                border: 2px solid grey;
+                background-color: rgb(69, 0, 0);
+                font-weight: bold;
+                color: black;
+                border-radius: 0px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                display: block;
+                width: 100%;
+                margin-left: 0px;
+                margin-top: -5px;
+            }
+            .nav .responsive{
+                margin-right: 15px;
+            } 
+            .icon {
+                background-color: black;
+                display: block;
+            }
+            a:hover {
+                background-color: black;
+                color: white;
+                border-radius: 0;
+            }
+            .fa:hover {
+                width: 43px;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+            }
+            .main {
+                display: block;
+            }
+            .container {
+                margin: 0;
+                padding: 0;
+                width: 97vw;
+                display: flex;
+                flex-direction: column;
+            }
+            .info {
+                display: grid;
+                grid-template-columns: auto;
+            }
+            .card {
+                text-align: justify;
+                font-size: x-large;
+            }
+            .details {
+                text-align: center;
+                margin: auto;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                width: 90%;
+            }
+            .nav.responsive{
+                position: relative;
+            }
+        } */
+
+        /* <!--aLREADY COMMENTED--> */
+        /* .main {
+            display: none;
+        } */
+
+        /* *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: none;
+            margin: 20px;
+        }
+
+        .nav {
+            width: 10%;
+            height: 10%;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+            margin: 35px 30px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: none;
+            margin: 20px;
+        }
+
+        a{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        a:hover{
+            background-color: white;
+            color: black;
+        }  */
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../../home.html"><img src="../../../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../../home.html">Home</a></li>
+                    <li><a href="../../../HTML.html" class="active">HTML</a></li>
+                    <li><a href="../../../CSS.html">CSS</a></li>
+                    <li><a href="../../../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../../../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../../../JQuery.html">JQuery</a></li>
+                    <li><a href="../../../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../../../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidenav">
+           <details>
+            <summary>Day 1</summary>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Practice</summary>
+                        <ul class="links">
+                            <li><a href="../../practiceTask1.html" class="active" target="_self" class="tasks">Practice Task 1</a></li>
+                            <li><a href="../../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                            <li><a href="../../practiceTask3.html" target="_self" class="tasks">Practice Task 2</a></li>
+                            <li><a href="../../practiceTask4.html" target="_self" class="tasks">Practice Task 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Assignment</summary>
+                        <ul class="links">
+                            <li><a href="../../Assignment1Resume/resume.html" target="_self" class="tasks">Assignment 1</a></li>
+                            <li><a href="../../Assignment2LayoutWeb/layout1.html" target="_self" class="tasks">Assignment 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <summary>Day 2</summary>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Practice</summary>
+                        <ul class="links">
+                            <li><a href="../practiceTask1.html" class="active" target="_self" class="tasks">Practice Task 1</a></li>
+                            <li><a href="../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                            <li><a href="../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                            <li><a href="../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Assignment</summary>
+                        <ul class="links">
+                            <li><a href="../AssignmentTask1/menuList.html" target="_self" class="tasks">Assignment 1</a></li>
+                            <li><a href="../AssignmentTask2/imageGallery.html" target="_self" class="tasks">Assignment 2</a></li>
+                            <li><a href="../AssignmentTask3/sessionTask1.html" target="_self" class="tasks">Assignment 3</a></li>
+                            <li><a href="./sessionTask2.html" target="_self" class="tasks">Assignment 4</a></li>
+                            <li><a href="../AssignmentTask5/sessionTask3.html" target="_self" class="tasks">Assignment 5</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+           </details>
+        </div>
+        <!-- <aside class="sidebar" style="float: left; background-color: gray; width: 30%;"></aside> -->
+        <div class="htmlimg" style="width: 70%; height: 50%;">
+            <div class="container">
+                <div>
+                    <a href="#" onclick="myFunction()" class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="nav" id="navbar">
+                    <a href="#">
+                        <details>
+                            <ul>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                            </ul>
+                            <summary>Public</summary>
+                        </details>
+                    </a>
+                    <a href="#">
+                        <details>
+                            <ul>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                            </ul>
+                            <summary>View</summary>
+                        </details>
+                    </a>
+                    <a href="#">
+                        <details>
+                            <ul>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                            </ul>
+                            <summary>HR</summary>
+                        </details>
+                    </a>
+                    <a href="#">
+                        <details>
+                            <ul>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                                <li>Link 1</li>
+                            </ul>
+                            <summary>Network Details</summary>
+                        </details>
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="details">
+                        <h1>Details</h1>
+                        <div class="info">
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                            <div class="card">
+                                <label for=""><strong>Name :</strong>abc</label><br>
+                                <label for=""><strong>Value :</strong>abc</label><br>
+                                <label for=""><strong>Extra :</strong>abc</label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("navbar") 
+                    if (x.className === "nav") {
+                        x.className += " responsive"
+                    } else {
+                        x.className = "nav"
+                    }
+                }
+            </script>
+        </div>
+        </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sessionTask4.css">
+    <style>
+        .homeimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(58, 58, 58);
+            width: 70vw;
+            height: 70vh;
+            margin: 40px auto;
+        }
+
+        .homeimg img {
+            width: 58%; 
+            height: 60%; 
+            padding: 30px 30px;
+        }
+
+        .homeimg h1 {
+            font-size: 60px; font-weight: bold; color: white;
+        }
+
+        @media only screen and (min-width:320px) and (max-width:426px) {
+            .homeimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(58, 58, 58);
+            width: 95vw;
+            height: fit-content;
+            margin: 20px auto;
+            }
+
+            .homeimg img {
+            width: 88%; 
+            height: 35%;
+            }
+            .homeimg h1 {
+            font-size: 40px; font-weight: bold; color: white;
+            }
+        }
+
+        @media only screen and (min-width:426px) and (max-width:769px) {
+            .homeimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(58, 58, 58);
+            width: 95vw;
+            height: fit-content;
+            margin: 20px auto;
+            }
+
+            .homeimg img {
+            width: 88%; 
+            height: 35%;
+            }
+            .homeimg h1 {
+            font-size: 50px; font-weight: bold; color: white;
+            }
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="./home.html"><img src="./logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                    <li><a href="Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="JavaScript.html">JavaScript</a></li>
+                    <li><a href="JQuery.html">JQuery</a></li>
+                    <li><a href="MiniProject.html">Mini Project</a></li>
+                    <li><a href="SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="homeimg">
+            <img src="./logos/radixLogo.jpeg" alt="Radixweb">
+            <h1>The Training Site</h1>
+        </div>
+    </div>
+</body>
+</html>

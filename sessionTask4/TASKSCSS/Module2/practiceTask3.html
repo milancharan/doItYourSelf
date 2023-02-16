@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../sessionTask4.css">
+    <style>
+        .htmlimg {
+            width: 78%;
+            margin: 5px;
+            padding: 10%;
+        }
+
+        .sidebar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidenav {
+            height: 100vh;
+            width: 20%;
+            /* position: absolute;
+            top: 120px;
+            left: 8px; */
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;  
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks{
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+        
+
+
+        .row > h1, p {
+            border: 1px double rgb(102, 233, 31);
+            padding: 0px 10px;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 425px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .row h1, p {
+                border: 1px double red;
+            }
+        }
+        
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .row h1, p {
+                border: 1px double rgb(20, 45, 233);
+            }
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../home.html"><img src="../../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../HTML.html">HTML</a></li>
+                    <li><a href="../../CSS.html" class="active">CSS</a></li>
+                    <li><a href="../../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../../JQuery.html">JQuery</a></li>
+                    <li><a href="../../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="sidenav">
+                <details>
+                    <summary>Day 1</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../Assignment1Resume/resume.html" target="_self" class="tasks">Assignment 1</a></li>
+                                    <li><a href="../Assignment2LayoutWeb/layout1.html" target="_self" class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                    <summary>Day 2</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="./practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="./practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="./practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="./practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="./AssignmentTask1/menuList.html" target="_self" class="tasks">Assignment 1</a></li>
+                                    <li><a href="./AssignmentTask2/imageGallery.html" target="_self" class="tasks">Assignment 2</a></li>
+                                    <li><a href="./AssignmentTask3/sessionTask1.html" target="_self" class="tasks">Assignment 2</a></li>
+                                    <li><a href="./AssignmentTask4/sessionTask2.html" target="_self" class="tasks">Assignment 2</a></li>
+                                    <li><a href="./AssignmentTask5/sessionTask3.html" target="_self" class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <div class="htmlimg">
+                <div class="row">
+                    <h1>Hey, Good Morning...</h1>
+                    <p>Let's have a coffee together..?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
