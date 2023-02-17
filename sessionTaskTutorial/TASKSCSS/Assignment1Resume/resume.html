@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../sessionTaskTutorial.css">
+    <style>
+        .htmlimg {
+            width: 78%;
+            margin: 5px;
+            padding: 2%;
+        }
+
+        .sidebar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidenav {
+            height: 100;
+            width: 20%;
+            /* position: absolute;
+            top: 120px;
+            left: 8px; */
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+
+
+        .htmlimg > div {
+            border-radius: 5px;
+        }
+
+        .htmlimg > #header {
+            font-size: larger;
+            width: 100%;
+            background-color: #274648;
+        }
+
+        .htmlimg > #contact {
+            margin-left: 45%;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        .htmlimg > a:hover {
+            font-weight: bold;
+        }
+
+        .htmlimg > .right {
+            float: left;
+            margin-top: 50px;
+            padding-left: 5px;
+            /*margin-right: -10px;
+    margin-left: 14%;*/
+            height: auto;
+            width: 99%;
+            background-color: #fae4a2;
+        }
+
+        /*.left
+{
+    float: left;
+    margin-top: 50px;
+    /*margin-right: -90px;
+    height: relative;
+    width: 10%;
+    background-color: #4160E8;
+    }*/
+
+    .htmlimg > #footer {
+            height: 40px;
+            clear: both;
+            position: relative;
+            background-color: #C1E3E1;
+        }
+
+        .htmlimg > h3 {
+            text-decoration: underline;
+        }
+
+        .htmlimg > #job-responsibilities {
+            padding: 1px;
+        }
+
+        .htmlimg > .job-title {
+            font-weight: bold;
+        }
+
+        .htmlimg > table {
+            border: 1px dashed black;
+        }
+
+        .htmlimg > td {
+            padding: 2px;
+            border: 1px solid #E88741;
+        }
+
+        .htmlimg > #course-name {
+            font-weight: bold;
+        }
+
+        .htmlimg > #company-name {
+            height: 2px;
+            text-decoration: underline;
+        }
+
+        .htmlimg > #job-title {
+            height: 5px;
+        }
+
+        .htmlimg > .job-duration {
+            float: right;
+        }
+
+        .htmlimg > #heading {
+            font-weight: bold;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 425px){
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+
+            .htmlimg {
+                padding: 3px 3px; 
+                width: 95%;
+            }
+
+            .htmlimg header {
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 426px) and (max-width: 768px){
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+
+            .htmlimg {
+                padding: 3px 3px; 
+                width: 98%;
+            }
+
+            .htmlimg header {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../home.html"><img src="../../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../HTML.html">HTML</a></li>
+                    <li><a href="../../CSS.html" class="active">CSS</a></li>
+                    <li><a href="../../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../../JQuery.html">JQuery</a></li>
+                    <li><a href="../../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="sidenav">
+                <details>
+                    <summary>Day 1</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="./resume.html" target="_self" class="tasks">Assignment 1</a></li>
+                                    <li><a href="../Assignment2LayoutWeb/layout1.html" target="_blank" class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                    <summary>Day 2</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../Module2/practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="../Module2/practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="../Module2/practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="../Module2/practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../Module2/AssignmentTask1/menuList.html" target="_blank" class="tasks">Assignment 1</a></li>
+                                    <li><a href="../Module2/AssignmentTask2/imageGallery.html" target="_blank" class="tasks">Assignment 2</a></li>
+                                    <li><a href="../Module2/AssignmentTask3/sessionTask1.html" target="_self" class="tasks">Assignment 3</a></li>
+                                    <li><a href="../Module2/AssignmentTask4/sessionTask2.html" target="_self" class="tasks">Assignment 4</a></li>
+                                    <li><a href="../Module2/AssignmentTask5/sessionTask3.html" target="_self" class="tasks">Assignment 5</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <div class="htmlimg">
+                <div id="header">
+                    <p id="name" style="font-size: xx-large; padding-left: 2%; padding-top: 1%; margin: 0; text-align: start;">Milan Charan</p>
+                             <a href="mailto:milancharan4@gmail.com" target="_blank"><p id="email" style="font-size: x-large; padding: 1% 0 1% 2% ; margin: 0;">milancharan4@gmail.com</p></a>
+                         </div>
+                         <div class="left">
+                         </div>
+                         <div class="right">
+                                <h3>CV Highlights</h3>
+                                <p>
+                                <ul>
+                                    <li><b>Career Objective : </b>To learn and develop technologies wth new ideas that are going to be the building block of my Career.</li>
+                                    <li>Currently going through CS50x – Web Application Engineering and CS61A – Structure & Interpretation of Computer Programs</li>
+                                    <li>I am well versed to HTML5, CSS3, JavaScript, <em>ReactJS</em>, C++, DBMS, OOPs, and Basic Python and Data Structures.</li>
+                                    <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li></ul>
+                                </p>
+                                <h3>Personal Projects</h3>
+                                <h4 id="project-name">Expense Tracker</h4>
+                                <p id="explanation">This is a website where we can track our expenses by using features like adding, removing and managing the same.
+                                    This website is designed using ReactJS and JSX code.
+                                </p>
+                    
+                                <h3>Educational Qualifications</h3>
+                                <table>
+                                    <caption>Education Details</caption>
+                                    <tr id="heading">
+                                        <th scope="col">Qualification</th>
+                                        <th scope="col">Board/University/College</th>
+                                        <th scope="col">Percentage / CGPA</th>
+                                        <th scope="col">Year</th>
+                                    </tr>
+                                    <tr>
+                                        <td>S.S.C</td>
+                                        <td>M.P.Board, India</td>
+                                        <td>84.16%</td>
+                                        <td>2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>H.S.C (Science Stream)</td>
+                                        <td>M.P.Board, India</td>
+                                        <td>74.20%</td>
+                                        <td>2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B.Tech (Bachelor of technology in Computer Science)</td>
+                                        <td>Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, India</td>
+                                        <td>7.8</td>
+                                        <td>2019-2023 <sub>pursuing</sub></td>
+                                    </tr>
+                                </table>
+                                <h3>Independent Courses</h3>
+                                <p>
+                                <ul>
+                                    <li>
+                                    <span class="course-name">HTML & CSS for Beginners – Web Fundamentals</span> – Codecademy.com</li>
+                                    <li>
+                                    <span class="course-name">Python – Fundamentals and Dynamic Programming </span> - Codecademy.com</li>
+                                    <li>
+                                    <span class="course-name">JavaScript – Programming Basics, JS Apps and Build Games </span> - Codecademy.com</li>
+                                    <li>
+                                    <span class="course-name">CS101: Introduction to Computer Science - Building a Web Crawler</span> - Udacity.com</li>
+                                    <li>
+                                    <span class="course-name">CS50x – Introduction to Computer Science I</span> – edX.org & Harvard University</li>
+                                    <li>
+                                    <span class="course-name">Calculus One</span> - Ohio State University & Coursera.org</li>
+                                    <li>
+                                    <span class="course-name">Introduction to Finance</span> - Coursera.org & University of Michigan</li>
+                                </ul>
+                                <h3>Technical Skills</h3>
+                                <p>
+                                <ul>
+                                    <li>
+                                    <span class="course-name">Operating Systems:</span> Ubuntu, Windows 98, Windows 2000, Windows XP, Windows NT, Windows Server 2003, Windows Vista, Windows 7, Macintosh Computers (OS X), Linux (Ubuntu)</li>
+                                    <li>
+                                    <span class="course-name">Programming Skills:</span>HTML5, CSS3, JavaScript, ReactJS, C++, DBMS, OOPs, learning Python and NodeJS.</li></ul>
+                                </p>
+                                <h3>Certifications / Awards:</h3>
+                                <p>
+                                <ul>
+                                    <li>5-star Coder on HackerRank in 2022</li>
+                                    <li>Get Trained by IIT, Bombay on C (Programming Language) in 2020</li>
+                                    <li>Certificate of participation in Uber Hacktag 2.0 in 2022 on unstop.</li>
+                                    <li>Certificate of participation in Flipkart Grid 3.0 - Software Develpoment Challange in 2021 on unstop.</li>
+                                </ul>
+                                </p>
+                                <h3>Personal Information:</h3>
+                                <p>
+                                <ul>
+                                    <li>
+                                    A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.
+                                    <li>
+                                    <span id="course-name">Languages Known:</span>English, Hindi, add Gujarati</li>
+                                    <li>
+                                    <span id="course-name">Hobbies:</span>I love meeting new people and knowing about ideas.I am a big fan of cooking.It is my passion to learn constantly.</li> </ul>
+                                </p>
+                                <h3>Other Information</h3>
+                                <p>
+                                <ul>
+                                    <li>
+                                    <span id="course-name">Expected Salary:</span>As per company standards</li>
+                                    <li>
+                                    <span id="course-name">Area of Interest:</span>Software Development, Programming, Start-ups, Coding, App Development, Technical Support, Support Engineer, Full-Stack Develpoment, and Business Analysis</li>
+                                    <li>
+                                    <span id="course-name">Joining Date:</span>Immediate</li></ul>
+                                </p>
+                                <h3>Declaration</h3>
+                                <p>
+                                I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+                         </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

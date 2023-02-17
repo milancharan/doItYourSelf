@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../sessionTaskTutorial.css">
+    <link rel="stylesheet" href="./sesssionTask3.css">
+    <style>
+        .htmlimg {
+            width: 78%;
+            margin: 5px;
+            padding: 2%;
+        }
+
+        .sidebar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidenav {
+            height: 100;
+            width: 20%;
+            /* position: absolute;
+            top: 120px;
+            left: 8px; */
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 425px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+            
+        }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../../../home.html"><img src="../../../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../../home.html">Home</a></li>
+                    <li><a href="../../../HTML.html">HTML</a></li>
+                    <li><a href="../../../CSS.html" class="active">CSS</a></li>
+                    <li><a href="../../../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../../../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../../../JQuery.html">JQuery</a></li>
+                    <li><a href="../../../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../../../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="sidenav">
+                <details>
+                    <summary>Day 1</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../../practiceTask1.html" target="_self" class="tasks">Practice Task
+                                            1</a></li>
+                                    <li><a href="../../practiceTask2.html" target="_self" class="tasks">Practice Task
+                                            2</a></li>
+                                    <li><a href="../../practiceTask3.html" target="_self" class="tasks">Practice Task
+                                            3</a></li>
+                                    <li><a href="../../practiceTask4.html" target="_self" class="tasks">Practice Task
+                                            4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../../Assignment1Resume/resume.html" target="_self"
+                                            class="tasks">Assignment 1</a></li>
+                                    <li><a href="../../Assignment2LayoutWeb/layout1.html" target="_blank"
+                                            class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                    <summary>Day 2</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../practiceTask1.html" target="_self" class="tasks">Practice Task 1</a>
+                                    </li>
+                                    <li><a href="../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a>
+                                    </li>
+                                    <li><a href="../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a>
+                                    </li>
+                                    <li><a href="../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../AssignmentTask1/menuList.html" target="_blank"
+                                            class="tasks">Assignment 1</a></li>
+                                    <li><a href="../AssignmentTask2/imageGallery.html" target="_blank"
+                                            class="tasks">Assignment 2</a></li>
+                                    <li><a href="../AssignmentTask3/sessionTask1.html" target="_self"
+                                            class="tasks">Assignment 3</a></li>
+                                    <li><a href="../AssignmentTask4/sessionTask2.html" target="_self"
+                                            class="tasks">Assignment 4</a></li>
+                                    <li><a href="./sessionTask3.html" target="_self" class="tasks">Assignment 5</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <div class="htmlimg">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col1">
+                            <div class="header">
+                                <div><i class="fa fa-shopping-cart" style="font-size:24px"></i> <label for="">&nbsp
+                                        Shoping Cart</label></div>
+                                <div><i class="fa fa-user" style="font-size:24px"></i> <label for=""> &nbsp Sign In/
+                                        Register</label></div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="nav1">
+                                <div><img src="../../../logos/logo.png" alt=""></div>
+                                <div>
+                                    <h1>512-219-8000</h1>
+                                </div>
+                            </div>
+                            <div class="nav2">
+                                <a href="#">Yard Signs</a>
+                                <a href="#">Banners</a>
+                                <a href="#">Accesories</a>
+                                <a href="#">Gallery</a>
+                                <a href="#">About</a>
+                                <a href="#">Price</a>
+                                <a href="#">Materials</a>
+                                <a href="#">FAQ</a>
+                                <a href="#" class="btn"
+                                    style=" background-color: orange; border-radius: 30px; color: white;">Custom
+                                    Quote</a>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="tic1">
+                                <h1 style="margin-bottom:5px;">Big Headline</h1>
+                                <h2 style="margin-bottom:5px;">Smaller Subhead Here</h2>
+                                <p style="margin-bottom:5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptas aliquam nesciunt molestiae eum, illum odit iure minima quam. Necessitatibus
+                                    libero aliquam tempora rerum molestiae unde facere iusto quaerat maxime ipsam,
+                                    consequatur culpa minima maiores, dolorum nam nisi voluptatibus. Iure obcaecati
+                                    aliquid, asperiores facere possimus magni voluptatum! Amet deleniti ipsam
+                                    necessitatibus?</p>
+                                <button class="btn" style="border-radius: 30px; margin: 4% 30% 4% 40%;"> Get
+                                    Started</button>
+                            </div>
+                            <div class="tic2">
+                                <form action="" style="margin-right: -20%;">
+                                    <input type="text" placeholder="First Name:">
+                                    <input type="text" placeholder="Last Name:"><br>
+                                    <input type="email" placeholder="Email:">
+                                    <input type="number" placeholder="Mobile Number"><br>
+                                    <textarea name="" id="" cols="30" rows="5" placeholder="Message"
+                                        style="padding: 5px;"></textarea><br>
+                                    <input class="btn btnSubmit" style="border-radius: 30px; width: 70%; margin: 10px -38px;"
+                                        type="submit" value="SEND">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="tic4">
+                                <h2 style="margin-bottom:5px;">This is is where an Awesome Title Goes</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore eveniet
+                                    voluptatibus excepturi expedita delectus architecto reiciendis ullam magni at,
+                                    temporibus, est impedit cumque nostrum. Magni iure saepe voluptatem repudiandae
+                                    repellat commodi aperiam voluptate, voluptas, provident eos odit quisquam, sequi
+                                    natus!</p>
+                            </div>
+                            <div class="tic5">
+                                <button
+                                    style="padding: 10px 20px;background-color: white;color: #7bcbe3; font-size: large; font-weight: bold; border-radius: 5px;border: none;">Design
+                                    it Now</button>
+                            </div>
+                        </div>
+                        <div class="col5">
+                            <div class="tic6">
+                                <video width="400" height="300" controls autoplay loop>
+                                    <source src="../../../logos/projectVideo.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="tic7">
+                                <h1 style="margin-bottom:5px;">Watch This</h1>
+                                <h3 style="margin-bottom:5px;">It's a video,yo!</h3>
+                                <p style="margin-bottom:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Molestias facere repellendus quos ad. Amet, iste sit nemo labore atque maxime rem
+                                    doloremque ut quibusdam tenetur aliquam molestias omnis sunt dolores accusantium?
+                                    Molestias quisquam nobis commodi.</p>
+                                <button class="btn" style="padding: 10px 25px; border-radius: 30px;">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <div class="tic8">
+                                <img src="../../../logos/img1.jpg" alt="Project One" style="display: block;">
+                                <h3>Project One</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt in
+                                    corrupti, laudantium optio ullam quis quaerat natus officiis eaque?</p>
+                            </div>
+                            <div class="tic9">
+                                <img src="../../../logos/img1.jpg" alt="Project Two" style="display: block;">
+                                <h3>Project Two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt in
+                                    corrupti, laudantium optio ullam quis quaerat natus officiis eaque?</p>
+                            </div>
+                            <div class="tic10">
+                                <img src="../../../logos/img1.jpg" alt="Project Three" style="display: block;">
+                                <h3>Project Three</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt in
+                                    corrupti, laudantium optio ullam quis quaerat natus officiis eaque?</p>
+                            </div>
+                        </div>
+                        <div class="col7">
+                            <div class="footer1">
+                                <div class="ftic"><label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="ftic">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="ftic">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="ftic">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="ftic">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="ftic">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                            </div>
+                            <div class="footer2">
+                                <label style="color: white;" for=""><Strong>Copyright &#169
+                                        SignDepotATX.com</Strong></label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
