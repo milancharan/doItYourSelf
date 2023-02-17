@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sessionTaskTutorial.css">
+    <style>
+        /* .htmlimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70vw;
+            height: 70vh;
+            margin: 40px 400px;
+        } */
+
+        .htmlimg {
+            width: 78%;
+            margin: 5px;
+            padding: 10%;
+        }
+
+        .sidebar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        table {
+            width: 100%;
+            font-size: 30px;
+        }
+
+        .data {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .sidenav {
+            height: 100vh;
+            width: 20%;
+            /* position: absolute;
+            top: 120px;
+            left: 8px; */
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 426px) {
+            .container {
+                max-width: 425px;
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+
+            .nav ul {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                width: 100%;
+            }
+
+            a.active {
+                color: black;
+                font-weight: bold;
+            }
+
+            header {
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                background-color: gray;
+                border-bottom: 3px solid rgb(20, 220, 220);
+            }
+
+            header img {
+                width: 100%;
+            }
+
+            .htmlimg img {
+                width: 90%;
+                height: fit-content;
+            }
+
+            .sidebar {
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            .sidenav {
+                height: fit-content;
+                width: 100%;
+                text-align: start;
+                background-color: gray;
+                padding: 0;
+            }
+
+            summary {
+                list-style-type: none;
+                font-size: large;
+                font-weight: bold;
+                /* padding: 5px; */
+            }
+
+            .tasks {
+                font-weight: bold;
+                font-size: large;
+            }
+
+            .links li {
+                padding: 0px;
+            }
+
+            details {
+                padding: 0px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 10px;
+            }
+
+            .data {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            tr,
+            td,
+            th {
+                border: 1px solid black;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 426px) and (max-width: 769px) {
+            .container {
+                max-width: 768px;
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+
+            .htmlimg img {
+                width: 100%;
+                margin: 0;
+                height: fit-content;
+            }
+
+            .sidebar {
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            .sidenav {
+                height: fit-content;
+                width: 100%;
+                text-align: start;
+                /* position: absolute;
+            top: 120px;
+            left: 8px; */
+                background-color: gray;
+                /* padding-top: 60px; */
+            }
+
+            summary {
+                list-style-type: none;
+                font-size: larger;
+                font-weight: bold;
+                /* padding: 5px; */
+            }
+
+            .tasks {
+                font-weight: bold;
+                font-size: larger;
+            }
+
+            .links li {
+                padding: 0px;
+            }
+
+            details {
+                padding: 0px;
+            }
+        }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../home.html"><img src="../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../HTML.html" class="active">HTML</a></li>
+                    <li><a href="../CSS.html">CSS</a></li>
+                    <li><a href="../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../JQuery.html">JQuery</a></li>
+                    <li><a href="../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="sidenav">
+                <details>
+                    <summary>Day 1</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../TASKSHTML/practiceTask1.html" target="_self" class="tasks">Practice
+                                            Task 1</a></li>
+                                    <li><a href="../TASKSHTML/practiceTask2.html" target="_self" class="tasks">Practice
+                                            Task 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../TASKSHTML/AssignmentTask1.html" target="_self"
+                                            class="tasks">Assignment 1</a></li>
+                                    <li><a href="../TASKSHTML/AssignmentTask2.html" target="_self"
+                                            class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <!-- <aside class="sidebar" style="float: left; background-color: gray; width: 30%;"></aside> -->
+            <div class="htmlimg">
+                <table class="data">
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Department</th>
+                        <th>Employee Name</th>
+                        <th>Manager Name</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>PHP</td>
+                        <td>Milan Charan</td>
+                        <td>Ajay Sakalaya</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>OPS</td>
+                        <td>Govind Jha</td>
+                        <td>Utsav yadav</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>.NET</td>
+                        <td>Savan yadav</td>
+                        <td>tulesh katare</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Custom</td>
+                        <td>Tamanna Parmar</td>
+                        <td>Kritika Chouhan</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sales</td>
+                        <td>Hardip Singh</td>
+                        <td>Mohammad Alam</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</html>

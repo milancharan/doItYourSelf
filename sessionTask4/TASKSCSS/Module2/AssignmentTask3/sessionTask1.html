@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../sessionTaskTutorial.css">
+    <style>
+        .htmlimg {
+            width: 78%;
+            margin: 5px;
+            padding: 2%;
+        }
+
+        .sidebar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidenav {
+            height: 100vh;
+            width: 20%;
+            /* position: absolute;
+            top: 120px;
+            left: 8px; */
+            background-color: gray;
+            padding-top: 60px;
+        }
+
+        summary {
+            list-style-type: none;  
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tasks{
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links li {
+            padding: 5px;
+        }
+
+        details {
+            padding: 10px;
+        }
+
+        details ul {
+            list-style: none;
+        }
+        
+        img {
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid rgb(241, 185, 82);
+        }
+
+        .container1 {
+            max-width: 100%;
+            padding: 20px;
+            background-color: rgb(65, 39, 5);
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .tic {
+            max-width: 100%;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 10px;
+            background-color: rgb(104, 106, 108);
+        }
+
+        .row1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .show {
+            margin-left: 35%;
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: white;
+        }   
+
+        @media only screen and (min-width: 320px) and (max-width: 425px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .container1 {
+                max-width: 100%;
+                padding: 20px;
+                background-color: rgb(65, 39, 5);
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+            .sidebar {
+                display: grid;
+            }
+
+            .sidenav {
+                width: 100%;
+                height: fit-content;
+                padding: 0;
+                background-color: gray;
+            }
+            .htmlimg {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .container1 {
+                max-width: 100%;
+                padding: 20px;
+                background-color: rgb(65, 39, 5);
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../../home.html"><img src="../../../logos/Logo_radix.png" alt="Radixweb"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../../home.html">Home</a></li>
+                    <li><a href="../../../HTML.html">HTML</a></li>
+                    <li><a href="../../../CSS.html" class="active">CSS</a></li>
+                    <li><a href="../../../Bootstrap.html">Bootstrap</a></li>
+                    <li><a href="../../../JavaScript.html">JavaScript</a></li>
+                    <li><a href="../../../JQuery.html">JQuery</a></li>
+                    <li><a href="../../../MiniProject.html">Mini Project</a></li>
+                    <li><a href="../../../SQL.html">SQL</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="sidenav">
+                <details>
+                    <summary>Day 1</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../../practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="../../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="../../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="../../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../../Assignment1Resume/resume.html" target="_self" class="tasks">Assignment 1</a></li>
+                                    <li><a href="../../Assignment2LayoutWeb/layout1.html" target="_self" class="tasks">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                    <summary>Day 2</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Practice</summary>
+                                <ul class="links">
+                                    <li><a href="../practiceTask1.html" target="_self" class="tasks">Practice Task 1</a></li>
+                                    <li><a href="../practiceTask2.html" target="_self" class="tasks">Practice Task 2</a></li>
+                                    <li><a href="../practiceTask3.html" target="_self" class="tasks">Practice Task 3</a></li>
+                                    <li><a href="../practiceTask4.html" target="_self" class="tasks">Practice Task 4</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul class="links">
+                                    <li><a href="../AssignmentTask1/menuList.html" target="_blank" class="tasks">Assignment 1</a></li>
+                                    <li><a href="../AssignmentTask2/imageGallery.html" target="_blank" class="tasks">Assignment 2</a></li>
+                                    <li><a href="./sessionTask1.html" target="_self" class="tasks">Assignment 3</a></li>
+                                    <li><a href="../AssignmentTask4/sessionTask2.html" target="_self" class="tasks">Assignment 4</a></li>
+                                    <li><a href="../AssignmentTask5/sessionTask3.html" target="_self" class="tasks">Assignment 5</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <div class="htmlimg">
+                <div class="container1">
+                    <div class="tic">
+                        <div class="studentDetails">
+                            <div class="row1">
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                                <div>
+                                    <h3>Student Id: 01</h3>
+                                    <h3>Name : John Doe</h3>
+                                    <h3>Date of Birth : 19 May 2001</h3>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div>
+                                    <h3>College Name : SKITM </h3>
+                                    <h3>College address : Indore</h3>
+                                </div>
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                            </div>
+                            <a class="show" href="./sessionTaskCards.html">Show More</a>
+                        </div>
+                    </div>
+                    <div class="tic">
+                        <div class="studentDetails">
+                            <div class="row1">
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                                <div>
+                                    <h3>Student Id: 1</h3>
+                                    <h3>Name : John Doe</h3>
+                                    <h3>Date of Birth : 19 May 2001</h3>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div>
+                                    <h3>College Name : SKITM </h3>
+                                    <h3>College address : Inodre</h3>
+                                </div>
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                            </div>
+                            <a class="show" href="./sessionTaskCards.html">Show More</a>
+                        </div>
+                    </div>
+                    <div class="tic">
+                        <div class="studentDetails">
+                            <div class="row1">
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                                <div>
+                                    <h3>Student Id: 1</h3>
+                                    <h3>Name : John Doe</h3>
+                                    <h3>Date of Birth : 19 May 2001</h3>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div>
+                                    <h3>College Name : SKITM </h3>
+                                    <h3>College address : Inodre</h3>
+                                </div>
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                            </div>
+                            <a class="show" href="./sessionTaskCards.html">Show More</a>
+                        </div>
+                    </div>
+                    <div class="tic">
+                        <div class="studentDetails">
+                            <div class="row1">
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                                <div>
+                                    <h3>Student Id: 1</h3>
+                                    <h3>Name : John Doe</h3>
+                                    <h3>Date of Birth : 19 May 2001</h3>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div>
+                                    <h3>College Name : SKITM </h3>
+                                    <h3>College address : Inodre</h3>
+                                </div>
+                                <div><img src="../../../logos/img.jpg" alt="student"></div>
+                            </div>
+                            <a class="show" href="./sessionTaskCards.html">Show More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

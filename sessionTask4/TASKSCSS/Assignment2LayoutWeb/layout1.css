@@ -1,0 +1,122 @@
+.htmlimg > * {
+    box-sizing: border-box;
+}
+
+.htmlimg > body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.htmlimg > .header {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    justify-content: center;
+}
+
+.htmlimg > .header h1 {
+    flex: 50%;
+    font-size: 50px;
+    
+}
+
+.htmlimg > .header .logo img {
+    width: 45px;
+    height: 45px;
+    margin-top: 40px;
+}
+
+.htmlimg > .nav {
+    overflow: hidden;
+    background: #333;
+}
+
+.htmlimg > .nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.htmlimg > .nav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+.htmlimg > .search {
+    float: right;
+    padding: 10px 10px;
+    margin-top: 3px;
+}
+
+/* .nav form {
+    width: 30%;
+    float: right;
+    margin: auto;
+    padding: 15px 15px;
+} */
+
+/* .nav form button {
+    color: red;
+    margin-left: -5px;
+    font-size: 15px;
+} */
+
+/* .nav form input{
+    margin-top: 8px;
+} */
+
+.htmlimg > .leftcol {
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+}
+
+.htmlimg > .img {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.htmlimg > .info1 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.htmlimg > .rightcol {
+    float: right;
+    width: 67%;
+}
+
+.htmlimg > .row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.htmlimg > .footer {
+    padding: 20px;
+    text-align: center;
+    background: #bbb2b2;
+    margin-top: 20px;
+}
+
+/* @media screen and (max-width: 800px) {
+    .htmlimg > .leftcol, .rightcol {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .htmlimg > .nav a {
+        float: none;
+        width: 100%;
+    }
+} */
