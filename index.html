@@ -1,160 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./output.css">
-  <title>It's Milan</title>
+  <title>Mogal Corporation</title>
 </head>
-<body>
-  <nav
-  class="relative flex w-full flex-wrap items-center justify-between bg-gray-500 py-3 text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start"
-  data-te-navbar-ref>
-  <div class="flex w-full flex-wrap items-center justify-between px-6">
-    <button
-      class="block border-0 bg-transparent py-2 px-2.5 text-neutral-200 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
-      type="button"
-      data-te-collapse-init
-      data-te-target="#navbarSupportedContent4"
-      aria-controls="navbarSupportedContent4"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="[&>svg]:w-7">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="h-7 w-7">
-          <path
-            fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd" />
-        </svg>
-      </span>
-    </button>
-    <div
-      class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
-      id="navbarSupportedContent4"
-      data-te-collapse-item>
-      <a class="pr-2 text-xl opacity-100 font-medium hover:font-bold  text-white" href="#">Home</a>
-      <!-- Left links -->
-      <ul
-        class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
-        data-te-navbar-nav-ref>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-            class="text-white opacity-100 hover:font-medium active:text-black"
-            href="#"
-            data-te-nav-link-ref
-            >Education</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-            class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-            href="#"
-            data-te-nav-link-ref
-            >Skills</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-          class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-          href="#"
-          data-te-nav-link-ref
-          >Projects</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-          class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-          href="#"
-          data-te-nav-link-ref
-          >Certificates</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-          class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-          href="#"
-          data-te-nav-link-ref
-          >Achievements</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-            class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-            href="#"
-            data-te-nav-link-ref
-            >Know More</a
-          >
-        </li>
-        <li class="p-2" data-te-nav-item-ref>
-          <a
-          class="p-0 text-white opacity-100 hover:font-medium active:text-black"
-          href="#"
-          data-te-nav-link-ref
-          >Contact Me</a
-          >
-        </li>
-      </ul>
-      <!-- Left links -->
-    </div>
-    <!-- Collapsible wrapper -->
 
-    <!-- Right elements -->
-    <div class="relative flex items-center">
-      <div class="relative" data-te-dropdown-ref>
-        <a
-          class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
-          href="#"
-          id="dropdownMenuButton2"
-          role="button"
-          data-te-dropdown-toggle-ref
-          aria-expanded="false">
-          <img
-            src="data:image/png;base64,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"
-            class="rounded-full"
-            style="height: 50px; width: 50px"
-            alt=""
-            loading="lazy" />
-        </a>
-        <ul
-          class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-          aria-labelledby="dropdownMenuButton2"
-          data-te-dropdown-menu-ref>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
-              href="#"
-              data-te-dropdown-item-ref
-              >Action</a
-            >
-          </li>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
-              href="#"
-              data-te-dropdown-item-ref
-              >Another action</a
-            >
-          </li>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
-              href="#"
-              data-te-dropdown-item-ref
-              >Something else here</a
-            >
-          </li>
-        </ul>
+<body>
+
+  <header class="container mx-auto ">
+    <nav class="flex-no-wrap relative border-b-orange-200 flex w-full items-center justify-between  lg:justify-start"
+      data-te-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between px-6">
+        <button
+          class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="[&>svg]:w-7">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+        <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1" data-te-collapse-item>
+          <a class="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+            href="#">
+            <img src="./images/hau_gitschberge_horizontal1.png" alt="img" loading="lazy" />
+          </a>
+          <!-- Left links -->
+
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <!-- Icon -->
+          <ul class="list-style-none mr-auto gap-12 flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                href="#" data-te-nav-link-ref>Home</a>
+            </li>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Blog
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Features
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Categories
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>About</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>Contact</a>
+            </li>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Shop
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>Portfolio</a>
+            </li>
+            <li class="relative lg:pr-2" data-te-dropdown-ref>
+              <a class="hidden-arrow mr-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" id="dropdownMenuButton1" role="button" data-te-dropdown-toggle-ref aria-expanded="false">
+                <span class="[&>svg]:w-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                    <path fill-rule="evenodd"
+                      d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="absolute -mt-2.5 ml-2 rounded-full bg-red-700 py-0 px-1.5 text-xs text-white">1</span>
+              </a>
+              <ul
+                class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Action</a>
+                </li>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Another action</a>
+                </li>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </nav>
+  </header>
+
+  <section class="ml-0 bg-[#E7F2ED] pb-8">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="img-1 mt-32 ml-0">
+          <img src="./images/Rectangle65.png" alt="img" width="338" height="405">
+        </div>
+        <div class="img-2 mt-16 mx-40 mr-0">
+          <!-- <img src="./images/Vector.png" alt="img"> -->
+          <img src="./images/Rectangle66.png" alt="img" width="338" height="405">
+          <div class="text-center text-2xl mt-16">Hey There</div>
+          <div class="text-center text-7xl mt-16">i'm Haus</div>
+          <!-- <img src="./images/Vector.png" alt="img"> -->
+        </div>
+        <div class="img-3 mt-32 mx-40 mr-0">
+          <img src="./images/Rectangle67.png" alt="img" width="338" height="405">
+        </div>
+      </div>
+      <p class="text-xl text-center mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias hic
+        obcaecati, placeat consequuntur, rem, qui et architecto officiis ex esse quod cumque odit modi corporis aperiam
+        reiciendis facilis suscipit sunt inventore sit numquam ducimus consequatur? Dolore, quod! Cum nostrum quis
+        similique libero eius amet soluta porro consequatur voluptas laborum? Deleniti, nihil fugit et consectetur
+        facilis quod cumque obcaecati quam officia corporis, odit illum voluptates veritatis excepturi.</p>
+      <div class="flex justify-center">
+        <button type="button"
+          class="inline-block w-80 mt-8 text-xl tracking-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-btnColor hover:text-white"
+          data-te-ripple-init>
+          READ THE WHOLE STORY
+        </button>
       </div>
     </div>
-    <!-- Right elements -->
-  </div>
-  </nav>
+  </section>
+
+  <section class="ml-0 bg-secColor p-10">
+    <div class="container mx-auto">
+      <div class="flex">
+        <div class="img-1 mx-auto flex my-auto">
+          <img src="./images/Rectangle68.png" alt="img" width="338" height="405">
+        </div>
+        <div class="flex flex-col w-3/5">
+          <div class="text-4xl w-4/5 leading-snug">Condimentum Magna Vel Sodales Mollis Nish Nib Ornare Eros</div>
+          <div class="text-xl w-4/5 my-auto">LoremLorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            dolores voluptate qui ab ullam unde
+            perspiciatis delectus exercitationem beatae nesciunt., ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis dolores voluptate qui ab ullam unde
+            perspiciatis delectus exercitationem beatae nesciunt.
+          </div>
+          <button type="button"
+            class="inline-block w-fit mt-8 text-xl tracking-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-btnColor hover:text-white"
+            data-te-ripple-init>
+            GET STARTED
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ml-0 p-10">
+    <div class="container mx-auto">
+      <div class="flex flex-row justify-between">
+        <div class="img-1 mt-8 ml-0 grid gap-12">
+          <img src="./images/21.png" alt="img" width="460" height="312">
+          <img src="./images/23.png" alt="img" width="460" height="312">
+        </div>
+        <div class="">
+          hey
+        </div>
+        <div class="">
+          <div class="img-1 mt-8 mr-0">
+            <img src="./images/22.png" alt="img" width="460" height="312">
+            <img src="./images/24.png" alt="img" width="460" height="312">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
 </html>
